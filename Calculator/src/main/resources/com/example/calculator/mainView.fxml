@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="591.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.mainController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="571.0" style="-fx-background-color: white;">
+         <children>
+            <HBox prefHeight="135.0" prefWidth="571.0">
+               <children>
+                  <TextField fx:id="textField" editable="false" prefHeight="144.0" prefWidth="581.0" text="0">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="7.0" right="7.0" top="15.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font size="44.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutY="135.0" prefHeight="92.0" prefWidth="571.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#msCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="MS" textFill="WHITE">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#theRemainderOfTheDivisionCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="x%y" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#xToPowerYCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="x^y" textFill="WHITE">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#backspaceCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="←" textFill="WHITE">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#squareRootCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="√" textFill="WHITE">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox layoutY="227.0" prefHeight="92.0" prefWidth="571.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#mrCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="MR" textFill="WHITE">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#sevenCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="7" textFill="WHITE">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#eightCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="8" textFill="WHITE">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#nineCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="9" textFill="WHITE">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#divideCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="/" textFill="WHITE">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox layoutY="319.0" prefHeight="92.0" prefWidth="571.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#mcCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="MC" textFill="WHITE">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#fourCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="4" textFill="WHITE">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#fiveCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="5" textFill="WHITE">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#sixCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="6" textFill="WHITE">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#multiplyCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="*" textFill="WHITE">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox layoutY="411.0" prefHeight="92.0" prefWidth="571.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#acCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="AC" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#oneCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="1" textFill="WHITE">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#twoCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="2" textFill="WHITE">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#threeCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="3" textFill="WHITE">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#minusCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="-" textFill="WHITE">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox layoutY="503.0" prefHeight="92.0" prefWidth="571.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#cCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="C" textFill="WHITE">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#pointCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="." textFill="WHITE">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#zeroCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#equalsCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="=" textFill="WHITE">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="114.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#plusCol" prefHeight="92.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="+" textFill="WHITE">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
